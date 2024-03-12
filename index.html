@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Consulta de CEP</h2>
+        <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cepInput" placeholder="Digite o CEP">
+        </div>
+        <button id="searchBtn">Consultar</button>
+        <div class="result">
+            <label for="logradouro">Logradouro:</label>
+            <span id="logradouro"></span>
+        </div>
+        <div class="result">
+            <label for="cidade">Cidade:</label>
+            <span id="cidade"></span>
+        </div>
+        <div class="result">
+            <label for="bairro">Bairro:</label>
+            <span id="bairro"></span>
+        </div>
+        <div class="result">
+            <label for="uf">UF:</label>
+            <span id="uf"></span>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
